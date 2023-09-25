@@ -96,5 +96,9 @@ footer {
     z-index: 20;
 } */
 
+button {
+  text-transform: uppercase;
+}
+
 
 
