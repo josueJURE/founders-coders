@@ -5,5 +5,6 @@ const container2 = document.querySelector(".container2");
 
 btn.addEventListener("click", function () {
   container.style.display = "none";
-  container2.style.display = "block";
+  container2.style.display = "flex";
+  
 });
