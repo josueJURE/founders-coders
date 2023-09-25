@@ -20,6 +20,7 @@ body {
   align-items: center;
   overflow: hidden;
   display: none;
+  gap: 150px;
 }
 
 
@@ -101,12 +102,16 @@ button {
 }
 
 .circle, .circle2 {
-  height: 100px;
-  width: 100px;
+  height: 300px;
+  width: 300px;
   border: 1px black solid;
+  border-radius: 50%;
 
 }
 
 .questions {
+  height: 450px;
+  width: 450px;
+  border: 1px black solid;
 
 }
