@@ -1,4 +1,8 @@
 body {
+  overflow: hidden;
+}
+
+.container {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -6,7 +10,17 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  
+}
+
+.container2 {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  display: none;
 }
 
 .parent {
@@ -23,24 +37,23 @@ body {
   padding-block: var(--gutter);
   --stripe: hsl(0, 0%, 88%);
   background-image: repeating-linear-gradient(
-  -45deg,
-  var(--stripe),
-  var(--stripe) 2px,
-  transparent 2px,
-  transparent 8px
-);
-height: 200px;
-width: 600px;
-display: flex;
-justify-content: center;
-align-items: center;
-text-transform: uppercase;
+    -45deg,
+    var(--stripe),
+    var(--stripe) 2px,
+    transparent 2px,
+    transparent 8px
+  );
+  height: 200px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
 }
 
 h1.stripes {
   text-align: center;
 }
-
 
 layout-section {
   display: block;
@@ -48,7 +61,6 @@ layout-section {
   padding-inline: var(--gutter);
   --flow-space: var(--space4);
 }
-
 
 .test {
   /* background-color: white; */
@@ -79,10 +91,9 @@ footer {
   align-items: center;
   font-weight: bold;
   line-height: 1;
-  background-color: #FFE500;
-
+  background-color: #ffe500;
 }
-  /* footer {
+/* footer {
     --bg: var(--primary);
     position: sticky;
     bottom: 0;
@@ -99,6 +110,3 @@ footer {
 button {
   text-transform: uppercase;
 }
-
-
-
