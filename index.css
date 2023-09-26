@@ -23,6 +23,17 @@ body {
   gap: 150px;
 }
 
+.choice {
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width: 500px;
+  height: 25px;
+  text-align: center;
+  background: rgb(97, 99, 90);
+  color: white;
+}
+
 
 
 .parent {
@@ -109,9 +120,31 @@ button {
 
 }
 
-.questions {
+.multipleChoices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   height: 450px;
-  width: 450px;
+  width: 500px;
   border: 1px black solid;
+}
 
+.questions {
+  margin-top: 0;
+}
+
+.choice {
+  border: 1px black solid;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  width: 500px;
+  height: 25px;
+  text-align: center;
+  background: rgb(97, 99, 90);
+  color: white;
+}
+.choice:hover {
+  transform: scale(1.1);
+  background: rgb(47, 49, 40);
 }
