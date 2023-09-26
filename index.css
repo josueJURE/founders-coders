@@ -1,6 +1,13 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   overflow: hidden;
 }
+
+
 
 .container {
   height: 100vh;
@@ -91,7 +98,6 @@ layout-section {
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
 }
-
 footer {
   border-top: 1px black solid;
   width: 100%;
@@ -103,6 +109,8 @@ footer {
   font-weight: bold;
   line-height: 1;
   background-color: #ffe500;
+  position: relative;
+  bottom: -36px;
 }
 
 button {
