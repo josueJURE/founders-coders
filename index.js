@@ -7,6 +7,10 @@ const answerChoicesB = document.querySelector("#B");
 const answerChoicesC = document.querySelector("#C");
 const answerChoicesD = document.querySelector("#D");
 const answerChoiceE = document.querySelector("#E");
+const quizQuestion = document.querySelector(".quizQuestion");
+
+
+
 
 btn.addEventListener("click", function () {
   container.style.display = "none";
@@ -53,3 +57,18 @@ let questions = [
     correctAnswer: "var",
   },
 ];
+
+const lastQuestion = questions.length -1;
+let activeQuestion = 0;
+let count = 0;
+
+function renderQuestion() {
+  let q = questions[activeQuestion];
+  quizQuestion.innerHTML = `<p> ${q.question} <p>`;
+  answerChoicesA.innerHTML = q.one;
+  answerChoicesB.innerHTML = q.two;
+  answerChoicesC.innerHTML = q.three;
+  console.log(q.question)
+}
+
+renderQuestion()
