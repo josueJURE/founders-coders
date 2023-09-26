@@ -34,8 +34,6 @@ body {
   color: white;
 }
 
-
-
 .parent {
   text-align: center;
   width: 400px;
@@ -107,17 +105,26 @@ footer {
   background-color: #ffe500;
 }
 
-
 button {
   text-transform: uppercase;
 }
 
-.circle, .circle2 {
+.circle,
+.circle2 {
   height: 250px;
   width: 250px;
   border: 1px black solid;
   border-radius: 50%;
+}
 
+/* .circle:before, */
+.cirlce2:before {
+  content: "";
+  height: 80%;
+  width: 80%;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
 }
 
 .multipleChoices {
@@ -150,10 +157,8 @@ button {
   background: rgb(47, 49, 40);
 }
 
-
-  .parentChoices {
-    display: flex;
-    flex-direction: column;
-    row-gap: 10px;
+.parentChoices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
 }
-  
