@@ -1,9 +1,12 @@
 const btn = document.querySelector(".btn");
 const container = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
-const allChoices = Array.from(document.querySelectorAll(".choice"));
-
-console.log(allChoices)
+const allAnswerChoices = Array.from(document.querySelectorAll(".choice"));
+const answerChoicesA = document.querySelector("#A");
+const answerChoicesB = document.querySelector("#B");
+const answerChoicesC = document.querySelector("#C");
+const answerChoicesD = document.querySelector("#D");
+const answerChoiceE = document.querySelector("#E");
 
 btn.addEventListener("click", function () {
   container.style.display = "none";
