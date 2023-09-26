@@ -162,3 +162,11 @@ button {
   flex-direction: column;
   row-gap: 10px;
 }
+
+.progress-box {
+  height: 30px;
+  width: 30px;
+  background-color: rgb(116, 18, 18);
+  margin-left: 15px;
+}
+
