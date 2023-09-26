@@ -170,3 +170,7 @@ button {
   margin-left: 15px;
 }
 
+.progress-container {
+  display: flex;
+  flex-direction: row;
+}
