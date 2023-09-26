@@ -91,8 +91,14 @@ function renderCounter() {
     counter.innerHTML = count;
     timeGauge.style.width = `${count} * ${gaugeUnit} px`
     count ++;
-  } 
+  } else {
+    answerIsIncorrect();
+  }
 
+}
+
+function answerIsIncorrect() {
+  document.getElementById(activeQuestion).style.backgroundColor = "red";
 }
 
 renderQuestion()
