@@ -166,11 +166,15 @@ button {
 .progress-box {
   height: 30px;
   width: 30px;
-  background-color: rgb(116, 18, 18);
+  background-color: #ffe500;
   margin-left: 15px;
 }
 
 .progress-container {
   display: flex;
   flex-direction: row;
+}
+
+.counter {
+  text-align: center;
 }

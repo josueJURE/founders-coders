@@ -9,6 +9,9 @@ const answerChoicesC = document.querySelector("#C");
 const answerChoicesD = document.querySelector("#D");
 const answerChoiceE = document.querySelector("#E");
 const quizQuestion = document.querySelector(".quizQuestion");
+const timeGauge = document.querySelector(".time-gauge");
+const counter = document.querySelector(".counter");
+console.log(timeGauge)
 const questionTime = 10; // 10 seconds
 const guageWidth = 800; // 800px
 const gaugeUnit = guageWidth / questionTime; // 80px
@@ -83,5 +86,17 @@ function renderProgress() {
   }
 }
 
+function renderCounter() {
+  if (count <= questionTime) {
+    counter.innerHTML = count;
+    timeGauge.style.width = `${count} * ${gaugeUnit} px`
+    count ++;
+  } 
+
+}
+
 renderQuestion()
 renderProgress()
+renderCounter()
+
+
