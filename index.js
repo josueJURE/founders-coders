@@ -93,12 +93,25 @@ function renderCounter() {
     count ++;
   } else {
     answerIsIncorrect();
+    nextQuestion();
+    
   }
 
 }
 
 function answerIsIncorrect() {
   document.getElementById(activeQuestion).style.backgroundColor = "red";
+}
+
+function nextQuestion() {
+  count = 0;
+  if (activeQuestion < lastQuestion) {
+    activeQuestion++;
+    renderQuestion();
+  } else {
+    clearInterval(TIMER);
+    renderScore();
+  }
 }
 
 renderQuestion()
