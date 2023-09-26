@@ -8,6 +8,8 @@ const answerChoicesC = document.querySelector("#C");
 const answerChoicesD = document.querySelector("#D");
 const answerChoiceE = document.querySelector("#E");
 const quizQuestion = document.querySelector(".quizQuestion");
+const questionTime = 10; // 10 seconds
+const quageWidth = 800; // 800px
 
 
 
