@@ -178,3 +178,31 @@ button {
 .counter {
   text-align: center;
 }
+
+.timer {
+  align-self: flex-end;
+  flex-direction: column;
+}
+
+.counter {
+  font-size: 40px;
+  color: rgb(27, 118, 141);
+}
+
+.time-gauge-bg,
+.time-gauge {
+  position: absolute;
+  top: 78%;
+  left: 22%;
+}
+
+.time-gauge-bg {
+  height: 10px;
+  width: 800px;
+  background-color: lightgrey;
+}
+
+.time-gauge {
+  height: 10px;
+  background-color: rgb(179, 6, 247);
+}
