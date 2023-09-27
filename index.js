@@ -41,7 +41,7 @@ function checkAnswer(answer) {
 
 let questions = [
   {
-    question: "What is JavaScript",
+    question: "What is JavaScript ?",
     one: "A scripting language that enables you to create dynamically updating content",
     two: "A new anime series on Netflix",
     three: "A new social media created by Elon Musk",

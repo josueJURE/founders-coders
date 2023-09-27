@@ -44,8 +44,12 @@ body {
   width: 500px;
   height: fit-content;
   text-align: center;
-  background: rgb(97, 99, 90);
-  color: white;
+  color: black;
+}
+
+.choice:hover {
+  transform: scale(1.05);
+  
 }
 
 .parent {
@@ -156,10 +160,7 @@ button {
 }
 
 
-.choice:hover {
-  transform: scale(1.1);
-  background: rgb(47, 49, 40);
-}
+
 
 .parentChoices {
   display: flex;
