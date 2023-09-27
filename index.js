@@ -16,28 +16,26 @@ const questionTime = 10; // 10 seconds
 const guageWidth = 800; // 800px
 const gaugeUnit = guageWidth / questionTime; // 80px
 let TIMER;
+let score = 0;
 
 startBtn.addEventListener("click", startQuiz);
 
-allAnswerChoices.forEach((clickAnswer) {
-  clickAnswer.addEventListener("click", function(e) {
+allAnswerChoices.forEach((clickAnswer) => {
+  clickAnswer.addEventListener("click", function (e) {
     let userAnswer = e.target.innerText;
-    checkAnswer(userAnswer)
-
-  })
-
-})
+    checkAnswer(userAnswer);
+  });
+});
 
 function checkAnswer(answer) {
-  if(answer === questions[activeQuestion].correctAnswer) {
+  if (answer === questions[activeQuestion].correctAnswer) {
     score++;
     answerIsCorrect();
   } else {
-    answerIsInCorrect();
+    answerIsIncorrect();
   }
   nextQuestion();
 }
-
 
 let questions = [
   {
@@ -112,6 +110,10 @@ function renderCounter() {
 
 function answerIsIncorrect() {
   document.getElementById(activeQuestion).style.backgroundColor = "red";
+}
+
+function answerIsCorrect() {
+  document.getElementById(activeQuestion).style.backgroundColor = "green";
 }
 
 function nextQuestion() {
