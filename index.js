@@ -89,14 +89,13 @@ function renderProgress() {
 function renderCounter() {
   if (count <= questionTime) {
     counter.innerHTML = count;
-    timeGauge.style.width = `${count} * ${gaugeUnit} px`
+    timeGauge.style.width = `${count * gaugeUnit}px`
     count ++;
   } else {
     answerIsIncorrect();
     nextQuestion();
     
   }
-
 }
 
 function answerIsIncorrect() {
@@ -125,5 +124,6 @@ function renderScore() {
 renderQuestion()
 renderProgress()
 renderCounter()
+TIMER = setInterval(renderCounter, 1000);
 
 
