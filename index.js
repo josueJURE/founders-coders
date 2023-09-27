@@ -11,26 +11,20 @@ const answerChoiceE = document.querySelector("#E");
 const quizQuestion = document.querySelector(".quizQuestion");
 const timeGauge = document.querySelector(".time-gauge");
 const counter = document.querySelector(".counter");
-console.log(timeGauge)
+console.log(timeGauge);
 const questionTime = 10; // 10 seconds
 const guageWidth = 800; // 800px
 const gaugeUnit = guageWidth / questionTime; // 80px
-let TIMER; 
+let TIMER;
 
-
-
-
-btn.addEventListener("click", function () {
-  container.style.display = "none";
-  container2.style.display = "flex";
-});
+btn.addEventListener("click", startQuiz);
 
 let questions = [
   {
     question: "What is JavaScript",
     one: "A scripting language that enables you to create dynamically updating content",
     two: "A new anime series on Netflix",
-    three: "A new social media create  by Elon Musk",
+    three: "A new social media created by Elon Musk",
     correctAnswer:
       "A scripting language that enables you to create dynamically updating content",
   },
@@ -66,7 +60,7 @@ let questions = [
   },
 ];
 
-const lastQuestion = questions.length -1;
+const lastQuestion = questions.length - 1;
 let activeQuestion = 0;
 let count = 0;
 
@@ -76,25 +70,23 @@ function renderQuestion() {
   answerChoicesA.innerHTML = q.one;
   answerChoicesB.innerHTML = q.two;
   answerChoicesC.innerHTML = q.three;
-  console.log(q.question)
+  console.log(q.question);
 }
 
 function renderProgress() {
-  for(var questionIndex = 0; questionIndex <= lastQuestion; questionIndex++) {
-    progressContainer.innerHTML += `<div class="progress-box" id=${questionIndex}></div>`
-
+  for (var questionIndex = 0; questionIndex <= lastQuestion; questionIndex++) {
+    progressContainer.innerHTML += `<div class="progress-box" id=${questionIndex}></div>`;
   }
 }
 
 function renderCounter() {
   if (count <= questionTime) {
     counter.innerHTML = count;
-    timeGauge.style.width = `${count * gaugeUnit}px`
-    count ++;
+    timeGauge.style.width = `${count * gaugeUnit}px`;
+    count++;
   } else {
     answerIsIncorrect();
     nextQuestion();
-    
   }
 }
 
@@ -121,9 +113,11 @@ function renderScore() {
   ScoreContainer.innerHTML += `<h2>Number of Correctly Answered Questions: ${score}</h2>`;
 }
 
-renderQuestion()
-renderProgress()
-renderCounter()
-TIMER = setInterval(renderCounter, 1000);
-
-
+function startQuiz() {
+  container.style.display = "none";
+  container2.style.display = "flex";
+  renderQuestion();
+  renderProgress();
+  renderCounter();
+  TIMER = setInterval(renderCounter, 1000);
+}
