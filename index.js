@@ -28,6 +28,16 @@ allAnswerChoices.forEach((clickAnswer) {
 
 })
 
+function checkAnswer(answer) {
+  if(answer === questions[activeQuestion].correctAnswer) {
+    score++;
+    answerIsCorrect();
+  } else {
+    answerIsInCorrect();
+  }
+  nextQuestion();
+}
+
 
 let questions = [
   {
