@@ -144,7 +144,7 @@ function startQuiz() {
   renderQuestion();
   renderProgress();
   renderCounter();
-  TIMER = setInterval(renderCounter, 1000);
+  // TIMER = setInterval(renderCounter, 1000);
 }
 
 function year() {
