@@ -39,7 +39,8 @@ body {
 
 .choice {
   border: 1px black solid;
-  border-radius: 10px;
+  border-radius: 15px;
+  padding: 5px;
   margin-bottom: 5px;
   width: 500px;
   height: fit-content;
