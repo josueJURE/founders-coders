@@ -147,7 +147,8 @@ function startQuiz() {
 }
 
 function year() {
-  let year = new Date().getFullYear();
-  console.log(year)
+  return new Date().getFullYear();
 }
+
+footer.innerHTML = `Founders & Coders copyright ${year()} `
 
