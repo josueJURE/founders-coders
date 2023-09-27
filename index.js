@@ -1,4 +1,4 @@
-const btn = document.querySelector(".btn");
+const startBtn = document.querySelector(".btn");
 const container = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
 const progressContainer = document.querySelector(".progress-container");
@@ -17,7 +17,17 @@ const guageWidth = 800; // 800px
 const gaugeUnit = guageWidth / questionTime; // 80px
 let TIMER;
 
-btn.addEventListener("click", startQuiz);
+startBtn.addEventListener("click", startQuiz);
+
+allAnswerChoices.forEach((clickAnswer) {
+  clickAnswer.addEventListener("click", function(e) {
+    let userAnswer = e.target.innerText;
+    checkAnswer(userAnswer)
+
+  })
+
+})
+
 
 let questions = [
   {
