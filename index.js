@@ -13,7 +13,7 @@ const answerChoiceE = document.querySelector("#E");
 const quizQuestion = document.querySelector(".quizQuestion");
 const timeGauge = document.querySelector(".time-gauge");
 const counter = document.querySelector(".counter");
-console.log(timeGauge);
+
 const questionTime = 10; // 10 seconds
 const guageWidth = 800; // 800px
 const gaugeUnit = guageWidth / questionTime; // 80px
@@ -90,7 +90,7 @@ function renderQuestion() {
   answerChoicesA.innerHTML = q.one;
   answerChoicesB.innerHTML = q.two;
   answerChoicesC.innerHTML = q.three;
-  console.log(q.question);
+
 }
 
 function renderProgress() {
@@ -116,6 +116,7 @@ function answerIsIncorrect() {
 
 function answerIsCorrect() {
   document.getElementById(activeQuestion).style.backgroundColor = "green";
+
 }
 
 function nextQuestion() {

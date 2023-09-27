@@ -6,11 +6,15 @@
   font-family: "Open Sans", sans-serif;
   font-family: "Quicksand", sans-serif;
   font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  line-height: 1;
 }
 
 body {
   overflow: hidden;
 }
+
+
 
 .container {
   height: 100vh;
@@ -38,7 +42,7 @@ body {
   border-radius: 10px;
   margin-bottom: 5px;
   width: 500px;
-  height: 25px;
+  height: fit-content;
   text-align: center;
   background: rgb(97, 99, 90);
   color: white;
@@ -107,8 +111,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-weight: bold;
-  line-height: 1;
+  /* font-weight: bold;
+  line-height: 1; */
   background-color: #ffe500;
   position: relative;
   bottom: -36px;
@@ -151,16 +155,7 @@ button {
   margin-top: 0;
 }
 
-.choice {
-  border: 1px black solid;
-  border-radius: 10px;
-  margin-bottom: 5px;
-  width: 500px;
-  height: 25px;
-  text-align: center;
-  background: rgb(97, 99, 90);
-  color: white;
-}
+
 .choice:hover {
   transform: scale(1.1);
   background: rgb(47, 49, 40);
@@ -213,7 +208,7 @@ button {
 
 .time-gauge {
   height: 10px;
-  background-color: rgb(179, 6, 247);
+  background-color: #ffe500;;
 }
 
 .score-container {
