@@ -3,7 +3,7 @@ const container = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
 const progressContainer = document.querySelector(".progress-container");
 const scoreContainer = document.querySelector(".score-container");
-console.log(scoreContainer)
+const footer = document.querySelector("footer");
 const allAnswerChoices = Array.from(document.querySelectorAll(".choice"));
 const answerChoicesA = document.querySelector("#A");
 const answerChoicesB = document.querySelector("#B");
@@ -145,3 +145,9 @@ function startQuiz() {
   renderCounter();
   TIMER = setInterval(renderCounter, 1000);
 }
+
+function year() {
+  let year = new Date().getFullYear();
+  console.log(year)
+}
+
