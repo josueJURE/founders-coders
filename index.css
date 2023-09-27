@@ -214,3 +214,28 @@ button {
   height: 10px;
   background-color: rgb(179, 6, 247);
 }
+
+.score-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  padding: 50px 100px;
+
+  visibility: hidden;
+}
+
+.score-container h2 {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+

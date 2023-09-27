@@ -2,6 +2,8 @@ const startBtn = document.querySelector(".btn");
 const container = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
 const progressContainer = document.querySelector(".progress-container");
+const scoreContainer = document.querySelector(".score-container");
+console.log(scoreContainer)
 const allAnswerChoices = Array.from(document.querySelectorAll(".choice"));
 const answerChoicesA = document.querySelector("#A");
 const answerChoicesB = document.querySelector("#B");
@@ -128,11 +130,11 @@ function nextQuestion() {
 }
 
 function renderScore() {
-  ScoreContainer.style.visibility = "visible";
+  scoreContainer.style.visibility = "visible";
 
   let scorePercentage = Math.round((100 * score) / questions.length);
-  ScoreContainer.innerHTML = `<h2>Percentage of Correctly Answered Questions: ${scorePercentage}</h2>`;
-  ScoreContainer.innerHTML += `<h2>Number of Correctly Answered Questions: ${score}</h2>`;
+  scoreContainer.innerHTML = `<h2>Percentage of Correctly Answered Questions: ${scorePercentage}</h2>`;
+  scoreContainer.innerHTML += `<h2>Number of Correctly Answered Questions: ${score}</h2>`;
 }
 
 function startQuiz() {
