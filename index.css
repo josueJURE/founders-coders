@@ -1,7 +1,6 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  /* text-transform: uppercase; */
   font-family: "Caveat", cursive;
   font-family: "Open Sans", sans-serif;
   font-family: "Quicksand", sans-serif;
@@ -179,8 +178,13 @@ button {
 .time-gauge {
   width: 500px;
   height: 11px;
-  background-color: #ffe500;
   background-color: gray;
+}
+
+.time-gauge-bg {
+  height: 100%;
+  background-color: rgb(179, 6, 247);
+
 }
 
 .score-container {

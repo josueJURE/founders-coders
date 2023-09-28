@@ -11,12 +11,12 @@ const answerChoicesC = document.querySelector("#C");
 const answerChoicesD = document.querySelector("#D");
 const answerChoiceE = document.querySelector("#E");
 const quizQuestion = document.querySelector(".quizQuestion");
-const timeGauge = document.querySelector(".time-gauge-bg");
+const timeGaugeBg = document.querySelector(".time-gauge-bg");
 const counter = document.querySelector(".counter");
 
 const questionTime = 10; // 10 seconds
-const guageWidth = 800; // 800px
-const gaugeUnit = guageWidth / questionTime; // 80px
+const guageWidth = 500; // 500px
+const gaugeUnit = guageWidth / questionTime; // 50px
 let TIMER;
 let score = 0;
 
@@ -63,7 +63,7 @@ let questions = [
     question: "JavaScript is:  ",
     one: "Weakly typed",
     two: "Strongly typed",
-    three: "Weakly and Strongly type",
+    three: "Weakly and Strongly typed",
     correctAnswer: "Weakly Typed",
   },
   {
@@ -103,7 +103,8 @@ function renderProgress() {
 function renderCounter() {
   if (count <= questionTime) {
     counter.innerHTML = count;
-    timeGauge.style.width = `${count * gaugeUnit}px`;
+   
+    timeGaugeBg.style.width = `${count * gaugeUnit}px`;
     count++;
   } else {
     answerIsIncorrect();
