@@ -1,7 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-family: "Caveat", cursive;
   font-family: "Open Sans", sans-serif;
   font-family: "Quicksand", sans-serif;

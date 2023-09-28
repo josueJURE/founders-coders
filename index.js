@@ -31,10 +31,13 @@ allAnswerChoices.forEach((clickAnswer) => {
 
 function checkAnswer(answer) {
   if (answer === questions[activeQuestion].correctAnswer) {
-    score++;
     answerIsCorrect();
+    console.log(questions[activeQuestion].correctAnswer);
+    score++;
   } else {
     answerIsIncorrect();
+    // debugger
+    // answerIsIncorrect();
   }
   nextQuestion();
 }
