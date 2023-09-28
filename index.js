@@ -1,6 +1,6 @@
 const startBtn = document.querySelector(".btn");
 const container = document.querySelector(".container");
-const container2 = document.querySelector(".container2");
+const container2 = document.querySelector(".containerGame");
 const progressContainer = document.querySelector(".progress-container");
 const scoreContainer = document.querySelector(".score-container");
 const footer = document.querySelector("footer");
@@ -11,7 +11,7 @@ const answerChoicesC = document.querySelector("#C");
 const answerChoicesD = document.querySelector("#D");
 const answerChoiceE = document.querySelector("#E");
 const quizQuestion = document.querySelector(".quizQuestion");
-const timeGauge = document.querySelector(".time-gauge");
+const timeGauge = document.querySelector(".time-gauge-bg");
 const counter = document.querySelector(".counter");
 
 const questionTime = 10; // 10 seconds
@@ -57,12 +57,11 @@ let questions = [
     correctAnswer: "Hypertext Markup Language",
   },
   {
-    question:
-      "Which CSS property is used to change the text color of an element?",
-    one: "color",
-    two: "background-color",
-    three: "font-family",
-    correctAnswer: "color",
+    question: "JavaScript is:  ",
+    one: "Weakly typed",
+    two: "Strongly typed",
+    three: "Weakly and Strongly type",
+    correctAnswer: "Weakly Typed",
   },
   {
     question: "What does DOM stand for?",
@@ -72,11 +71,11 @@ let questions = [
     correctAnswer: "Document Object Model",
   },
   {
-    question: "Which keyword is used to declare a variable in JavaScript?",
-    one: "var",
-    two: "let",
-    three: "const",
-    correctAnswer: "var",
+    question: "What does CSS stand for?",
+    one: "Computer Style Sheets",
+    two: "Cascading Style Sheets",
+    three: "Creative Style System",
+    correctAnswer: "Cascading Style Sheets",
   },
 ];
 
@@ -90,7 +89,6 @@ function renderQuestion() {
   answerChoicesA.innerHTML = q.one;
   answerChoicesB.innerHTML = q.two;
   answerChoicesC.innerHTML = q.three;
-
 }
 
 function renderProgress() {
@@ -116,7 +114,6 @@ function answerIsIncorrect() {
 
 function answerIsCorrect() {
   document.getElementById(activeQuestion).style.backgroundColor = "green";
-
 }
 
 function nextQuestion() {
@@ -144,12 +141,11 @@ function startQuiz() {
   renderQuestion();
   renderProgress();
   renderCounter();
-  // TIMER = setInterval(renderCounter, 1000);
+  TIMER = setInterval(renderCounter, 1000);
 }
 
 function year() {
   return new Date().getFullYear();
 }
 
-footer.innerHTML = `Founders & Coders copyright ${year()} `
-
+footer.innerHTML = `Founders & Coders copyright ${year()} `;
