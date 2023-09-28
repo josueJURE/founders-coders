@@ -64,7 +64,7 @@ let questions = [
     one: "Weakly typed",
     two: "Strongly typed",
     three: "Weakly and Strongly typed",
-    correctAnswer: "Weakly Typed",
+    correctAnswer: "Weakly typed",
   },
   {
     question: "What does DOM stand for?",
