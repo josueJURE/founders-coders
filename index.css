@@ -56,7 +56,7 @@ html {
   border-radius: 15px;
   padding: 5px;
   margin-bottom: 5px;
-  width: 500px;
+  max-width: 300px;
   height: fit-content;
   text-align: center;
   color: black;
@@ -222,11 +222,11 @@ button {
 
 /* responsiveness  */
 
-@media (max-width: 500px) {
+/* @media (max-width: 500px) {
   html {
     font-size: 52.5%;
   }
   .choice {
     width: 400px;
   }
-}
+} */
