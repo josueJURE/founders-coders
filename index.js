@@ -44,43 +44,42 @@ function checkAnswer(answer) {
 
 let questions = [
   {
-    question: "What is JavaScript ?",
-    one: "A scripting language that enables you to create dynamically updating content",
-    two: "A new anime series on Netflix",
-    three: "A new social media created by Elon Musk",
-    correctAnswer:
-      "A scripting language that enables you to create dynamically updating content",
+    question: "What is JavaScript?",
+    one: "A scripting language that enables you to create dynamically updating content.",
+    two: "A new anime series on Netflix.",
+    three: "A new social media platform created by Elon Musk.",
+    correctAnswer: "A scripting language that enables you to create dynamically updating content.",
   },
-
   {
     question: "What does HTML stand for?",
-    one: "Hypertext Markup Language",
-    two: "Highly Technical Modern Language",
-    three: "Hyper Transfer Markup Language",
-    correctAnswer: "Hypertext Markup Language",
+    one: "Hypertext Markup Language.",
+    two: "Highly Technical Modern Language.",
+    three: "Hyper Transfer Markup Language.",
+    correctAnswer: "Hypertext Markup Language.",
   },
   {
-    question: "JavaScript is:  ",
-    one: "Weakly typed",
-    two: "Strongly typed",
-    three: "Weakly and Strongly typed",
-    correctAnswer: "Weakly typed",
+    question: "JavaScript is:",
+    one: "Weakly typed.",
+    two: "Strongly typed.",
+    three: "Both weakly and strongly typed.",
+    correctAnswer: "Weakly typed.",
   },
   {
     question: "What does DOM stand for?",
-    one: "Document Object Model",
-    two: "Data Object Model",
-    three: "Dynamic Object Model",
-    correctAnswer: "Document Object Model",
+    one: "Document Object Model.",
+    two: "Data Object Model.",
+    three: "Dynamic Object Model.",
+    correctAnswer: "Document Object Model.",
   },
   {
     question: "What does CSS stand for?",
-    one: "Computer Style Sheets",
-    two: "Cascading Style Sheets",
-    three: "Creative Style System",
-    correctAnswer: "Cascading Style Sheets",
+    one: "Computer Style Sheets.",
+    two: "Cascading Style Sheets.",
+    three: "Creative Style System.",
+    correctAnswer: "Cascading Style Sheets.",
   },
 ];
+
 
 const lastQuestion = questions.length - 1;
 let activeQuestion = 0;
