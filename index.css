@@ -25,6 +25,7 @@ html {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
 }
 
 .progress-container {
@@ -40,6 +41,11 @@ html {
   align-items: center;
   overflow: hidden;
   gap: 150px;
+  border: 1px black solid;
+  width: 500px;
+  border-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .wrapper {
@@ -47,8 +53,7 @@ html {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
-  border: 1px rgb(177, 10, 10) solid;
+  max-width: 100vw;
 }
 
 .choice {
@@ -180,14 +185,23 @@ button {
 }
 
 .time-gauge {
-  width: 500px;
+  max-width: 100%;
   height: 11px;
   background-color: gray;
+ 
+
+  
+
 }
 
 .time-gauge-bg {
   height: 100%;
   background-color: rgb(179, 6, 247);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
 }
 
 .score-container {
@@ -213,7 +227,7 @@ button {
 }
 
 .progressAndTimer {
-  width: 100%;
+  max-width: 500px;
   height: 100%;
   display: flex;
   flex-direction: column;

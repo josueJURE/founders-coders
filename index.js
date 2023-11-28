@@ -15,8 +15,8 @@ const timeGaugeBg = document.querySelector(".time-gauge-bg");
 const counter = document.querySelector(".counter");
 
 const questionTime = 10; // 10 seconds
-const guageWidth = 500; // 500px
-const gaugeUnit = guageWidth / questionTime; // 50px
+const guageWidth = 100; // 500px
+const gaugeUnit = guageWidth / questionTime; // 10px
 let TIMER;
 let score = 0;
 
@@ -86,6 +86,7 @@ let activeQuestion = 0;
 let count = 0;
 
 function renderQuestion() {
+  // debugger
   let q = questions[activeQuestion];
   quizQuestion.innerHTML = `<p> ${q.question} <p>`;
   answerChoicesA.innerHTML = q.one;
@@ -103,7 +104,7 @@ function renderCounter() {
   if (count <= questionTime) {
     counter.innerHTML = count;
    
-    timeGaugeBg.style.width = `${count * gaugeUnit}px`;
+    timeGaugeBg.style.width = `${count * gaugeUnit}%`;
     count++;
   } else {
     answerIsIncorrect();
